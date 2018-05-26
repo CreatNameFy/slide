@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <!--android:descendantFocusability="blocksDescendants"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:id="@+id/title_bar">
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="商品"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/titlel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="详情"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/titler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评价"
+                android:gravity="center_vertical"
+                android:textColor="#000"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical ="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:textSize="13sp"
+            android:textColor="#f7bf72"/>
+        <ImageView
+            android:id="@+id/icon"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/more"/>
+    </RelativeLayout>
+</RelativeLayout>
